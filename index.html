@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./styles.css">  
+  <link rel="stylesheet" href="./styles.css">
   <title>Frontend Mentor | Interactive rating component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,33 +18,37 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style> -->
 </head>
+
 <body>
 
   <!-- Rating state start -->
-  <main>
-    <div class="title-container">
-      <h3>
-        did we do?
-      </h3> 
+  <main class="main-container">
+    <div class="container">
+      <div class="icon-container">
+        <img src="./images/icon-star.svg" alt="icon-star" id="icon-start">
+      </div>
+      <div class="title-container">
+        <h3>
+          How did we do?
+        </h3>
+      </div>
+      <div class="paragraph-container">
+        <p>
+          let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!
+        </p>
+      </div>
+      <div class="numbers-container">
+        <button id="one">1</button>
+        <button id="two">2</button>
+        <button id="three">3</button>
+        <button id="four">4</button>
+        <button id="five">5</button>
+      </div>
+      <div class="btn-submit">
+        <button id="btn-submit">Submit</button>
+      </div>
     </div>
-    <div class="paragraph-container">
-      <p>
-        let us know how we did with your support request. All feedback is appreciated 
-        to help us improve our offering!
-      </p> 
-    </div>
-    <div class="numbers-container">
-      <div class="number-1">1</div>
-      <div class="number-2">2</div>
-      <div class="number-3">3</div>
-      <div class="number-4">4</div>
-      <div class="number-5">5</div>
-    </div>
-    <div class="btn-submit">
-      Submit
-    </div>
-  
-  
   </main>
 
   <!-- Rating state end -->
@@ -53,15 +59,17 @@
 
   Thank you!
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
+  We appreciate you taking the time to give a rating. If you ever need more support,
   don’t hesitate to get in touch!
 
   <!-- Thank you state end -->
 
-  
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" reltarget="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/victicor1989">Victor Aristizabal</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" reltarget="_blank">Frontend Mentor</a>. Coded by
+    <a href="https://github.com/victicor1989">Victor Aristizabal</a>.
   </div>
   <script src="./main.js"></script>
 </body>
+
 </html>

@@ -8,13 +8,71 @@
     --color-medium-gray: hsl(216, 12%, 54%);
     --color-dark-blue: hsl(213, 19%, 18%);
     --color-very-dark-blue: hsl(216, 12%, 8%);
+    --color-black: #000000;
 
     /* FONT SIZE */
-    --md: 14px
+    --md: 14px;
+    --sm: 12px;
+    --lg: 16px;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-color: var(--color-black);
+    font-family: 'Overpass', sans-serif;
+}
+
+.main-container {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 310px;
+    height: 260px;
+    background-color: var(--color-medium-gray);
+    border-radius: 15px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    box-sizing: border-box;
+    color: var(--color-white);
+}
+
+.icon-container {
+    width: 30px;
+    height: 30px;
+    margin: 20px 20px 0 20px;
+    background-color: var(--color-dark-blue);
+    border-radius: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon-start {
+    width: 12px;
+    height: 12px;
+}
+
+.title-container {
+    margin: 20px 20px 0 20px;
+}
+
+.paragraph-container {
+    margin: 10px 10px 0 20px;
+}
+
+p {
+    font-size: var(--sm);
+    letter-spacing: 0.1px;
+    line-height: 18px;
 }
