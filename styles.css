@@ -13,7 +13,7 @@
     /* FONT SIZE */
     --md: 12px;
     --sm: 10px;
-    --lg: 16px;
+    --lg: 13px;
 }
 
 * {
@@ -138,13 +138,61 @@ span {
 
 .container-content {
     width: 330px;
-    height: 340px;
+    height: 350px;
     background-color: var(--color-very-dark-blue);
     border-radius: 15px;
     box-sizing: border-box;
     color: var(--color-white);
 }
 
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.image-container img {
+    width: 130px;
+    height: 90px;
+}
+
+#container-paragraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#container-paragraph p {
+    width: 162px;
+    height: 30px;
+    font-size: var(--lg);
+    color: var(--color-orange);
+    background-color: var(--color-dark-blue);
+    padding: 0 10px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .7;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 10px ;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    margin: 12px 18px 20px 18px;
+    font-size: var(--lg);
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    color: var(--color-ligth-gray);
+}
 
 .attribution { 
     font-size: 11px; text-align: center; 
